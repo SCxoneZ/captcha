@@ -43,6 +43,7 @@ body{
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
 }
 
 .container input{
@@ -50,15 +51,15 @@ body{
   height: 30px;
   width: 80%;
   border-radius: 25px;
+  text-align: center;
   border: 2px solid #626262;
+  position: relative;
   transition: .3s;
 }
 
 .container input:focus{
   outline: none;
-  text-align: center;
   border-color: rgba(167,180,220,1);
-  box-shadow: 0 0 0 3.5px rgba(167,180,220,0.5);
 }
 
 .container .content .btn-submit{
@@ -71,9 +72,35 @@ body{
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  transition: .3s;
+}
+
+.container .content .btn-submit:hover{
+  border: 1.5px solid #D7DAFF;
+  background-color: transparent;
+  color: white;
 }
 
 .captcha{
   margin: 10px;
   /* display: inline-block; */
+}
+
+.btn-generate{
+  width: 150px;
+  height: 50px;
+  background-color: #D7F4FF;
+  border-radius: 15px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  transition: .3s;
+}
+
+.btn-generate:hover{
+  background-color: transparent;
+  border: 1.5px solid #D7F4FF;
+  color: white;
 }
